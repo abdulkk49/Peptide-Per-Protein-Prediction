@@ -31,18 +31,18 @@ class ProteinNet(nn.Module):
 def loss_fn(log_probs, target):
     # (N x 10 or 3) * (N x 10 or 3)
     criterion = nn.NLLLoss()
-    print(log_probs.shape, target.shape)
+    # print(log_probs.shape, target.shape)
     loss = criterion(log_probs, target.long())
     return loss
 
 def accuracy(outputs, labels):
     # N x 10(3) -> N x 1
-    print(outputs.shape, labels.shape)
+    # print(outputs.shape, labels.shape)
     outputs = np.argmax(outputs, axis=-1)
     outputs = outputs.flatten()
     #N x 1
     labels = labels.flatten()
-    print(outputs.shape, labels.shape)
+    # print(outputs.shape, labels.shape)
     return np.sum(outputs==labels)/float(outputs.shape[0])
 
 
