@@ -93,7 +93,7 @@ def collate_fn(batch):
     attention_mask = [item[1] for item in batch]
     input_ids = torch.stack(input_ids)
     attention_mask = torch.stack(attention_mask)
-    print(input_ids.shape, attention_mask.shape)
+    # print(input_ids.shape, attention_mask.shape)
     embedding = torch.zeros((input_ids.shape[0],1024), dtype = torch.float32).to(device)
     i = 0
     bs = 32
@@ -101,12 +101,12 @@ def collate_fn(batch):
     with torch.no_grad():
         while i + bs <= len(input_ids):
             e = bertModel(input_ids=input_ids[i:i+bs],attention_mask=attention_mask[i:i+bs])[0]
-            print(e.shape)
+            # print(e.shape)
             for seq_num in range(len(e)):
                 seq_len = (attention_mask[seq_num] == 1).sum()
                 seq_emd = e[seq_num, 1:seq_len-1, :]
                 seq_emd = torch.mean(seq_emd, -2)
-                print(seq_emd.shape)
+                # print(seq_emd.shape)
                 embedding[x,:] = seq_emd
                 x += 1
         
@@ -117,12 +117,12 @@ def collate_fn(batch):
     	if i != len(input_ids):
             #Final batch < 32
             e = bertModel(input_ids=input_ids[i:len(input_ids)],attention_mask=attention_mask[i:len(input_ids)])[0]
-            print(e.shape)
+            # print(e.shape)
             for seq_num in range(len(e)):
                 seq_len = (attention_mask[seq_num] == 1).sum()
                 seq_emd = e[seq_num, 1:seq_len-1, :]
                 seq_emd = torch.mean(seq_emd, -2)
-                print(seq_emd.shape)
+                # print(seq_emd.shape)
                 embedding[x,:] = seq_emd
                 x += 1
             print(e.shape, i)
@@ -182,7 +182,7 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params):
                 memlabels_batch = memlabels_batch.data.numpy()
                 loclabels_batch = loclabels_batch.data.numpy()
                 # compute all metrics on this batch
-                summary_batch = {'loc_accuracy': metrics['Loc_accuracy'](locutput_batch, loclabels_batch), 'mem_accuracy': metrics['Mem_accuracy'](memoutput_batch, memlabels_batch)}
+                summary_batch = {'loc_accuracy': metrics['Loc_accuracy'](locoutput_batch, loclabels_batch), 'mem_accuracy': metrics['Mem_accuracy'](memoutput_batch, memlabels_batch)}
                 summary_batch['loss'] = loss.item()
                 summ.append(summary_batch)
 
@@ -323,6 +323,7 @@ if __name__ == '__main__':
     del train_attention_mask
 
     sequences_Example =[]
+    count = 0
     with open("./val/sequences.txt", "r") as f:
         for seq in f.readlines():
             desc = str(seq).rstrip('\n')

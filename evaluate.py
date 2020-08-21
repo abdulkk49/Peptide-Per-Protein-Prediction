@@ -50,7 +50,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
 
 
             locloss = loss_fn(locoutput_batch.cpu(), loclabels_batch)
-            memloss = loss_fn(memoutput_batch.cpu(), loclabels_batch)
+            memloss = loss_fn(memoutput_batch.cpu(), memlabels_batch)
 
             loss = locloss + memloss
             
@@ -58,7 +58,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params):
             locoutput_batch = locoutput_batch.data.cpu().numpy()
             memoutput_batch = memoutput_batch.data.cpu().numpy()
             memlabels_batch = memlabels_batch.data.numpy()
-            loclabels_batch = memlabels_batch.data.numpy()
+            loclabels_batch = loclabels_batch.data.numpy()
 
             # mask shape = N x 1632
             # compute all metrics on this batch
