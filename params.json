@@ -1,0 +1,2 @@
+{"learning_rate": 1e-3,"infeatures": 1024, "hidden": 32, "batch_size": 64, "classes1": 10, "classes2": 3, "num_epochs": 10, "save_summary_steps": 80, "num_workers": 4
+}
