@@ -1,0 +1,67 @@
+2020-08-21 15:50:10,869:INFO: Loading the datasets...
+2020-08-21 15:50:13,267:INFO: - done.
+2020-08-21 15:50:13,269:INFO: Starting training for 10 epoch(s)
+2020-08-21 15:50:13,269:INFO: Epoch 1/10
+2020-08-21 16:00:44,566:INFO: Loading the datasets...
+2020-08-21 16:00:47,011:INFO: - done.
+2020-08-21 16:00:47,093:INFO: Starting training for 10 epoch(s)
+2020-08-21 16:00:47,093:INFO: Epoch 1/10
+2020-08-21 16:02:51,933:INFO: Loading the datasets...
+2020-08-21 16:02:54,186:INFO: - done.
+2020-08-21 16:02:54,188:INFO: Starting training for 10 epoch(s)
+2020-08-21 16:02:54,188:INFO: Epoch 1/10
+2020-08-21 17:41:25,387:INFO: - Train metrics: loc_accuracy: 0.344 ; mem_accuracy: 0.492 ; loss: 2.931
+2020-08-21 19:22:07,953:INFO: Loading the datasets...
+2020-08-21 19:22:10,152:INFO: - done.
+2020-08-21 19:22:10,154:INFO: Starting training for 10 epoch(s)
+2020-08-21 19:22:10,154:INFO: Epoch 1/10
+2020-08-21 21:00:56,724:INFO: - Train metrics: loc_accuracy: 0.344 ; mem_accuracy: 0.492 ; loss: 2.931
+2020-08-21 21:11:55,062:INFO: - Validation metrics: val_locaccuracy: 0.643 ; val_memaccuracy: 0.708 ; val_loss: 1.882
+2020-08-21 21:11:55,138:INFO: - Found new best loc accuracy
+2020-08-21 21:11:55,139:INFO: - Found new best mem accuracy
+2020-08-21 21:11:55,139:INFO: Epoch 2/10
+2020-08-22 06:40:17,495:INFO: Loading the datasets...
+2020-08-22 06:40:19,950:INFO: - done.
+2020-08-22 06:40:20,003:INFO: Starting training for 10 epoch(s)
+2020-08-22 06:40:20,004:INFO: Epoch 1/10
+2020-08-22 08:11:16,332:INFO: - Train metrics: loc_accuracy: 0.344 ; mem_accuracy: 0.492 ; loss: 2.931
+2020-08-22 08:21:22,629:INFO: - Validation metrics: val_locaccuracy: 0.643 ; val_memaccuracy: 0.708 ; val_loss: 1.882
+2020-08-22 08:21:22,746:INFO: - Found new best loc accuracy
+2020-08-22 08:21:22,746:INFO: - Found new best mem accuracy
+2020-08-22 08:21:22,780:INFO: Epoch 2/10
+2020-08-22 09:52:19,555:INFO: - Train metrics: loc_accuracy: 0.609 ; mem_accuracy: 0.680 ; loss: 1.960
+2020-08-22 10:02:26,226:INFO: - Validation metrics: val_locaccuracy: 0.683 ; val_memaccuracy: 0.742 ; val_loss: 1.629
+2020-08-22 10:02:26,231:INFO: - Found new best loc accuracy
+2020-08-22 10:02:26,232:INFO: - Found new best mem accuracy
+2020-08-22 10:02:26,259:INFO: Epoch 3/10
+2020-08-22 11:33:24,247:INFO: - Train metrics: loc_accuracy: 0.648 ; mem_accuracy: 0.641 ; loss: 1.770
+2020-08-22 11:43:30,429:INFO: - Validation metrics: val_locaccuracy: 0.704 ; val_memaccuracy: 0.738 ; val_loss: 1.503
+2020-08-22 11:43:30,433:INFO: - Found new best loc accuracy
+2020-08-22 11:43:30,434:INFO: Epoch 4/10
+2020-08-22 13:14:25,538:INFO: - Train metrics: loc_accuracy: 0.719 ; mem_accuracy: 0.703 ; loss: 1.489
+2020-08-22 13:24:31,119:INFO: - Validation metrics: val_locaccuracy: 0.708 ; val_memaccuracy: 0.745 ; val_loss: 1.457
+2020-08-22 13:24:31,125:INFO: - Found new best loc accuracy
+2020-08-22 13:24:31,125:INFO: - Found new best mem accuracy
+2020-08-22 13:24:31,157:INFO: Epoch 5/10
+2020-08-22 14:55:26,066:INFO: - Train metrics: loc_accuracy: 0.656 ; mem_accuracy: 0.703 ; loss: 1.553
+2020-08-22 15:05:31,910:INFO: - Validation metrics: val_locaccuracy: 0.728 ; val_memaccuracy: 0.756 ; val_loss: 1.440
+2020-08-22 15:05:31,915:INFO: - Found new best loc accuracy
+2020-08-22 15:05:31,915:INFO: - Found new best mem accuracy
+2020-08-22 15:05:31,955:INFO: Epoch 6/10
+2020-08-22 16:36:25,192:INFO: - Train metrics: loc_accuracy: 0.672 ; mem_accuracy: 0.719 ; loss: 1.508
+2020-08-22 16:46:31,173:INFO: - Validation metrics: val_locaccuracy: 0.741 ; val_memaccuracy: 0.752 ; val_loss: 1.367
+2020-08-22 16:46:31,177:INFO: - Found new best loc accuracy
+2020-08-22 16:46:31,178:INFO: Epoch 7/10
+2020-08-22 18:17:23,155:INFO: - Train metrics: loc_accuracy: 0.695 ; mem_accuracy: 0.703 ; loss: 1.539
+2020-08-22 18:27:28,487:INFO: - Validation metrics: val_locaccuracy: 0.746 ; val_memaccuracy: 0.758 ; val_loss: 1.372
+2020-08-22 18:27:28,492:INFO: - Found new best loc accuracy
+2020-08-22 18:27:28,492:INFO: - Found new best mem accuracy
+2020-08-22 18:27:28,519:INFO: Epoch 8/10
+2020-08-22 19:58:19,643:INFO: - Train metrics: loc_accuracy: 0.664 ; mem_accuracy: 0.750 ; loss: 1.422
+2020-08-22 20:08:25,470:INFO: - Validation metrics: val_locaccuracy: 0.735 ; val_memaccuracy: 0.755 ; val_loss: 1.371
+2020-08-22 20:08:25,474:INFO: Epoch 9/10
+2020-08-22 21:39:20,517:INFO: - Train metrics: loc_accuracy: 0.758 ; mem_accuracy: 0.727 ; loss: 1.474
+2020-08-22 21:49:26,338:INFO: - Validation metrics: val_locaccuracy: 0.738 ; val_memaccuracy: 0.752 ; val_loss: 1.361
+2020-08-22 21:49:26,341:INFO: Epoch 10/10
+2020-08-22 23:20:19,363:INFO: - Train metrics: loc_accuracy: 0.758 ; mem_accuracy: 0.750 ; loss: 1.389
+2020-08-22 23:30:25,174:INFO: - Validation metrics: val_locaccuracy: 0.743 ; val_memaccuracy: 0.755 ; val_loss: 1.361
